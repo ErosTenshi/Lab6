@@ -1,0 +1,8 @@
+Lab 2 — Chapter 3 Problem 4 Observations
+
+While working through Problems 1–3, I noticed a few things:
+• Changing backgrounds (Problem 1) can affect how readable sprites and platforms are. High-contrast stripes look cool but can make depth hard to judge.
+• Small coins are easier to notice when the parallax hills are slightly darker than the sky.
+• Profiling shows most time is spent in fill operations during draw calls; reducing overdraw improved FPS.
+• Debug logs were most useful for jump state and collisions. It helped confirm when the player landed on the edge of a platform.
+• The auto-scrolling camera plus player-follow logic felt natural. I expected jitter, but clamping delta time prevented spikes.
